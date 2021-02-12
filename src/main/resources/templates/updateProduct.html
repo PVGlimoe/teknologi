@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>updateProduct</title>
+</head>
+<body>
+
+<form action="/updateProduct/submit" method="post">
+    <div class="container">
+        <label>Product name:</label>
+        <input type="text" th:value="${navn}">
+
+        <label>Product price:</label>
+        <input type="number" th:field="*{price}">
+
+        <button type="submit">Create product</button>
+
+    </div>
+
+</form>
+
+</body>
+</html>
